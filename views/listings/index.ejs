@@ -39,6 +39,36 @@
             display: flex;
             align-items: center;
         }
+
+    
+    @media (max-width: 767.98px) {
+    #filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .filter {
+        margin: 0;
+        min-width: 65px;
+        flex-shrink: 0;
+    }
+
+    .tax-toggle {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    #filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    #filters {
+        scrollbar-width: none;
+    }
+}
     </style>
     <div id="filters">
         <div class="filter">
@@ -70,7 +100,7 @@
             <p>Camping</p>
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-cow"></i></i></div>
+            <div><i class="fa-solid fa-cow"></i></div>
             <p>Farms</p>
         </div>
         <div class="filter">
@@ -78,7 +108,7 @@
             <p>Arctic</p>
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-igloo"></i></i></div>
+            <div><i class="fa-solid fa-igloo"></i></div>
             <p>Domes</p>
         </div>
         <div class="filter">
