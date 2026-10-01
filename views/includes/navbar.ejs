@@ -70,22 +70,25 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
-      </div>
+    </div>
 
 
-    <form class="d-flex" role="search" action="/listings" method="GET">
-      <input 
+    <div class="navbar-nav ms-auto me-auto">
+      <form class="d-flex" role="search" action="/listings" method="GET">
+        <input 
         class="form-control me-2 search-inp" 
         type="search" 
         name="search"
         placeholder="Search destination"
         required
       />
+
       <button class="btn search-btn" type="submit">
         <i class="fa-solid fa-magnifying-glass"></i>
-        Search
+          Search
       </button>
     </form>
+  </div>
 
 
       <div class="navbar-nav ms-auto">
